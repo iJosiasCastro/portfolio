@@ -7,46 +7,45 @@
           :href="experience.link"
           target="_blank"
           rel="noreferrer"
-          class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          class="group experiences"
         >
           <div
-            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-zinc-800/20"
+            class="experience-background"
           ></div>
           <header
-            class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-zinc-500 sm:col-span-2"
+            class="experience-header"
             :aria-label="experience.time_from + ' to ' + experience.time_to"
           >
             {{ experience.time_from }} — {{ experience.time_to }}
           </header>
-          <div class="z-10 sm:col-span-6">
-            <h3 class="font-medium leading-snug text-zinc-200">
+          <div class="experience-info-container">
+            <h3 class="experience-info">
               <div>
                 <a
-                  class="inline-flex items-baseline font-medium leading-tight text-zinc-200 hover:text-green-300 focus-visible:text-green-300 group/link text-base"
+                  class="group/link experience-link"
                   :href="experience.link"
                   target="_blank"
                   rel="noreferrer"
                   :aria-label="experience.title"
                 >
+                  <span class="experience-link-span">
+                  </span>
                   <span>
                     {{ experience.title }}
-                    <span class="inline-block">
+                    <span>
                       <IconArrowUpRight />
                     </span>
                   </span>
                 </a>
               </div>
-              <div>
-                <div class="text-zinc-500" aria-hidden="true">{{ experience.subtitle }}</div>
-              </div>
             </h3>
-            <p class="mt-2 text-sm leading-normal">
+            <p class="experience-description">
               {{ experience.description }}
             </p>
-            <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-              <li class="mr-1.5 mt-2" v-for="(skill, e) in experience.skills" :key="e">
+            <ul class="skills-list" aria-label="Technologies used">
+              <li class="skill-item" v-for="(skill, e) in experience.skills" :key="e">
                 <div
-                  class="flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-medium leading-5 text-green-300"
+                  class="skill"
                 >
                   {{ skill }}
                 </div>
@@ -59,18 +58,18 @@
     </ol>
     <div class="mt-12">
       <a
-        class="inline-flex items-center font-medium leading-tight text-zinc-200 font-semibold text-zinc-200 group"
+        class="group view-resume-link"
         :aria-label="$t('view_resume_button')"
         href="/resume.pdf"
       >
         <span>
           <span
-            class="border-b border-transparent pb-px transition group-hover:border-green-300 motion-reduce:transition-none"
+            class="view-resume-button"
             >
             {{ $t('view_resume_button') }}
           </span>
-          <span class="whitespace-nowrap">
-            <ArrowRight />
+          <span>
+            <IconArrowRight />
           </span>
         </span>
       </a>
@@ -85,5 +84,49 @@ import en from '~/i18n/es.js';
 const { locale: actualLocale } = useI18n()
 
 const { experiences } = actualLocale == 'es' ? es : en;
-
 </script>
+
+<style scoped lang="postcss">
+.experiences{
+  @apply  relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50;
+}
+.experience-background{
+  @apply absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-zinc-800/20;
+}
+.experience-header{
+  @apply z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-zinc-500 sm:col-span-2;
+}
+.experience-info-container{
+  @apply z-10 sm:col-span-6;
+}
+.experience-info{
+  @apply font-medium leading-snug text-zinc-200;
+}
+.experience-link{
+  @apply inline-flex items-baseline font-medium leading-tight text-zinc-200 hover:text-green-300 focus-visible:text-green-300 text-base;
+}
+.experience-description{
+  @apply mt-2 text-sm leading-normal;
+}
+.experience-link-span{
+  @apply absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block;
+}
+
+
+.skills-list{
+  @apply mt-2 flex flex-wrap;
+}
+.skill-item{
+  @apply mr-1.5 mt-2;
+}
+.skill{
+  @apply flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-medium leading-5 text-green-300;
+}
+
+.view-resume-link{
+  @apply inline-flex items-center font-medium leading-tight text-zinc-200 font-semibold text-zinc-200;
+}
+.view-resume-button{
+  @apply border-b border-transparent pb-px transition group-hover:border-green-300 motion-reduce:transition-none;
+}
+</style>

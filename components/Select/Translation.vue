@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-end">
+  <div class="translation-container">
 
     <SelectDropdown
       v-if="locales.length > 1"
@@ -7,7 +7,7 @@
       :strategy="'absolute'"
       placement="bottom"
       mode="hover"
-      class="inline-flex items-center mt-5 p-2"
+      class="select-dropdown"
     >
       <template #trigger>
         <IconTranslation />
@@ -17,11 +17,11 @@
       <template #item="{ item: locale }">
         <NuxtLink
           :to="switchLocalePath(locale.code)"
-          class="px-4 py-1 flex items-center whitespace-no-wrap"
+          class="language-item"
           :class="[
             locale.code === actualLocale
-              ? 'font-semibold cursor-default text-gray-200'
-              : 'hover:d-text-primary',
+              ? 'language-active'
+              : '', 
           ]"
           >{{ locale.name }}</NuxtLink
         >
@@ -34,3 +34,18 @@
   const { locale: actualLocale, locales } = useI18n()
   const switchLocalePath = useSwitchLocalePath()
 </script>
+
+<style scoped lang="postcss">
+.translation-container{
+  @apply flex justify-end;
+  .select-dropdown{
+    @apply inline-flex items-center mt-5 p-2;
+  }
+  .language-item{
+    @apply px-4 py-1 flex items-center;
+  }
+  .language-active{
+    @apply font-semibold cursor-default text-gray-200;
+  }
+}
+</style>

@@ -1,8 +1,8 @@
 <template>
-  <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
-    <li v-for="(socialMedia, index) in socialMediaLinks" :key="index" class="mr-5 text-xs">
+  <ul class="social-list" aria-label="Social media">
+    <li v-for="(socialMedia, index) in socialMediaLinks" :key="index" class="social-item">
       <a
-        class="block hover:text-zinc-200"
+        class="social-link"
         :href="socialMedia.url"
         target="_blank"
         rel="noreferrer"
@@ -31,3 +31,15 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="postcss">
+.social-list{
+  @apply ml-1 mt-8 flex items-center;
+  .social-item{
+    @apply mr-5 text-xs;
+    .social-link{
+      @apply block hover:text-zinc-200;
+    }
+  }
+}
+</style>

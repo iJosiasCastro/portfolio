@@ -3,7 +3,7 @@
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
     fill="currentColor"
-    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-tranzinc-y-1 group-hover/link:tranzinc-x-1 group-focus-visible/link:-tranzinc-y-1 group-focus-visible/link:tranzinc-x-1 motion-reduce:transition-none tranzinc-y-px"
+    class="icon"
     aria-hidden="true"
   >
     <path
@@ -13,3 +13,9 @@
     ></path>
   </svg>
 </template>
+
+<style scoped lang="postcss">
+.icon{
+  @apply inline-block h-4 w-4 shrink-0 transition-transform;
+}
+</style>

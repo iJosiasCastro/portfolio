@@ -3,9 +3,9 @@
 
       <SelectTranslation />
 
-      <div class="lg:flex justify-between gap-4">
+      <div class="page">
 
-        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:pb-24 pt-12">
+        <header class="header">
           <div>
             <Info />
             <Menu />
@@ -13,7 +13,7 @@
           <Social />
         </header>
 
-        <main id="content" class="pt-24 lg:w-1/2 lg:pb-24 pt-12">
+        <main id="content" class="content">
           <SectionItem
             :id="$t('menu.about.id')"
             :name="$t('menu.about.name')"
@@ -43,3 +43,15 @@
       
   </Layout>
 </template>
+
+<style scoped lang="postcss">
+.page{
+  @apply lg:flex justify-between gap-4;
+  .header{
+    @apply lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:pb-24 pt-12;
+  }
+  .content{
+    @apply lg:w-1/2 lg:pb-24 pt-12;
+  }
+}
+</style>

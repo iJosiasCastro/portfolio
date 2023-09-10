@@ -3,32 +3,31 @@
     <ul class="group/list">
       <li class="mb-12" v-for="(project, i) in main_projects" :key="i">
         <div
-          class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+          class="group projects"
         >
           <div
-            class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-zinc-800/30"
+            class="project-background"
           ></div>
-          <div class="z-10 sm:order-2 sm:col-span-6">
+          <div class="project-info">
             <h3>
               <a
-                class="inline-flex items-baseline font-medium leading-tight text-zinc-200 hover:text-green-300 focus-visible:text-green-300 group/link text-base"
+                class="group/link project-link"
                 :href="project.link"
                 target="_blank"
                 rel="noreferrer"
                 :aria-label="project.title"
               >
-                <span
-                  class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                ></span>
+                  <span class="project-link-span">
+                  </span>
                 <span>
                   {{ project.title }}
-                  <span class="inline-block">
+                  <span>
                     <IconArrowUpRight />
                   </span>
                 </span>
               </a>
             </h3>
-            <p class="mt-2 text-sm leading-normal">
+            <p class="project-description">
               {{ project.description }}
             </p>
           </div>
@@ -39,26 +38,25 @@
             height="48"
             decoding="async"
             data-nimg="1"
-            class="rounded border-2 border-zinc-200/10 transition group-hover:border-zinc-200/30 sm:order-1 sm:col-span-2 sm:tranzinc-y-1"
+            class="project-thumbnail"
             :src="`/images/${project.thumbnail}`"
-            style="color: transparent"
           />
         </div>
       </li>
     </ul>
     <div class="mt-12">
       <a
-        class="inline-flex items-center font-medium leading-tight text-zinc-200 font-semibold text-zinc-200 group"
+        class="group view-projects-link"
         :aria-label="$t('view_projects_button')"
         href="/archive"
       >
         <span>
           <span
-            class="border-b border-transparent pb-px transition group-hover:border-green-300 motion-reduce:transition-none"
+            class="view-projects-button"
           >
             {{ $t("view_projects_button") }}
           </span>
-          <span class="whitespace-nowrap">
+          <span>
             <IconArrowRight />
           </span>
         </span>
@@ -75,3 +73,34 @@ const { locale: actualLocale } = useI18n();
 
 const { main_projects } = actualLocale == "es" ? es : en;
 </script>
+
+<style scoped lang="postcss">
+.projects{
+  @apply relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50;
+}
+.project-background{
+  @apply absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-zinc-800/30;
+}
+.project-info{
+  @apply z-10 sm:order-2 sm:col-span-6;
+  .project-link-span{
+    @apply absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block;
+  }
+  .project-link{
+    @apply inline-flex items-baseline font-medium leading-tight text-zinc-200 hover:text-green-300 focus-visible:text-green-300 text-base;
+  }
+  .project-description{
+    @apply mt-2 text-sm leading-normal;
+  }
+}
+.project-thumbnail{
+  @apply rounded border-2 border-zinc-200/10 transition group-hover:border-zinc-200/30 sm:order-1 sm:col-span-2;
+}
+
+.view-projects-link{
+  @apply inline-flex items-center font-medium leading-tight text-zinc-200 font-semibold text-zinc-200;
+}
+.view-projects-button{
+    @apply border-b border-transparent pb-px transition group-hover:border-green-300 motion-reduce:transition-none;
+}
+</style>
