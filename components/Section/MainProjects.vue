@@ -66,12 +66,14 @@
 </template>
 
 <script setup>
-import es from "~/i18n/es.js";
-import en from "~/i18n/es.js";
+import es from '~/i18n/es.js';
+import en from '~/i18n/en.js';
 
 const { locale: actualLocale } = useI18n();
 
-const { main_projects } = actualLocale == "es" ? es : en;
+const main_projects = computed(()=>{
+  return actualLocale.value == 'es' ? es.main_projects : en.main_projects;;
+});
 </script>
 
 <style scoped lang="postcss">

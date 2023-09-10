@@ -1,12 +1,8 @@
 <template>
   <div>
     <ol class="group/list">
-        
       <li class="mb-12" v-for="(experience, i) in experiences" :key="i">
-        <a
-          :href="experience.link"
-          target="_blank"
-          rel="noreferrer"
+        <div
           class="group experiences"
         >
           <div
@@ -18,26 +14,24 @@
           >
             {{ experience.time_from }} — {{ experience.time_to }}
           </header>
-          <div class="experience-info-container">
-            <h3 class="experience-info">
-              <div>
-                <a
-                  class="group/link experience-link"
-                  :href="experience.link"
-                  target="_blank"
-                  rel="noreferrer"
-                  :aria-label="experience.title"
-                >
-                  <span class="experience-link-span">
-                  </span>
+          <div class="experience-info">
+            <h3 class="">
+              <a
+                class="group/link experience-link"
+                :href="experience.link"
+                target="_blank"
+                rel="noreferrer"
+                :aria-label="experience.title"
+              >
+                <span class="experience-link-span">
+                </span>
+                <span>
+                  {{ experience.title }}
                   <span>
-                    {{ experience.title }}
-                    <span>
-                      <IconArrowUpRight />
-                    </span>
+                    <IconArrowUpRight />
                   </span>
-                </a>
-              </div>
+                </span>
+              </a>
             </h3>
             <p class="experience-description">
               {{ experience.description }}
@@ -52,9 +46,8 @@
               </li>
             </ul>
           </div>
-        </a>
+        </div>
       </li>
-      
     </ol>
     <div class="mt-12">
       <a
@@ -79,11 +72,13 @@
 
 <script setup>
 import es from '~/i18n/es.js';
-import en from '~/i18n/es.js';
+import en from '~/i18n/en.js';
 
 const { locale: actualLocale } = useI18n()
 
-const { experiences } = actualLocale == 'es' ? es : en;
+const experiences = computed(()=>{
+  return actualLocale.value == 'es' ? es.experiences : en.experiences;;
+});
 </script>
 
 <style scoped lang="postcss">
@@ -96,33 +91,29 @@ const { experiences } = actualLocale == 'es' ? es : en;
 .experience-header{
   @apply z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-zinc-500 sm:col-span-2;
 }
-.experience-info-container{
-  @apply z-10 sm:col-span-6;
-}
 .experience-info{
-  @apply font-medium leading-snug text-zinc-200;
+  @apply z-10 sm:order-2 sm:col-span-6;
+  .experience-link-span{
+    @apply absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block;
+  }
+  .experience-link{
+    @apply inline-flex items-baseline font-medium leading-tight text-zinc-200 hover:text-green-300 focus-visible:text-green-300 text-base;
+  }
+  .experience-description{
+    @apply mt-2 text-sm leading-normal;
 }
-.experience-link{
-  @apply inline-flex items-baseline font-medium leading-tight text-zinc-200 hover:text-green-300 focus-visible:text-green-300 text-base;
-}
-.experience-description{
-  @apply mt-2 text-sm leading-normal;
-}
-.experience-link-span{
-  @apply absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block;
 }
 
 
 .skills-list{
   @apply mt-2 flex flex-wrap;
+  .skill-item{
+    @apply mr-1.5 mt-2;
+    .skill{
+      @apply flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-medium leading-5 text-green-300;
+    }
+  }
 }
-.skill-item{
-  @apply mr-1.5 mt-2;
-}
-.skill{
-  @apply flex items-center rounded-full bg-green-400/10 px-3 py-1 text-xs font-medium leading-5 text-green-300;
-}
-
 .view-resume-link{
   @apply inline-flex items-center font-medium leading-tight text-zinc-200 font-semibold text-zinc-200;
 }
