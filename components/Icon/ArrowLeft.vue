@@ -15,7 +15,7 @@
 </template>
 
 <style scoped lang="postcss">
-.icon{
-  @apply ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover:translate-x-2;
+.icon {
+  @apply mr-1 h-4 w-4 rotate-180 transition-transform group-hover:-translate-x-2;
 }
 </style>

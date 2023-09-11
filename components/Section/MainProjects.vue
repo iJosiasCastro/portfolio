@@ -45,10 +45,10 @@
       </li>
     </ul>
     <div class="mt-12">
-      <a
+      <NuxtLink
         class="group view-projects-link"
         :aria-label="$t('view_projects_button')"
-        href="/archive"
+        :to="localePath('/proyects')"
       >
         <span>
           <span
@@ -60,7 +60,7 @@
             <IconArrowRight />
           </span>
         </span>
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -68,6 +68,8 @@
 <script setup>
 import es from '~/i18n/es.js';
 import en from '~/i18n/en.js';
+
+const localePath = useLocalePath()
 
 const { locale: actualLocale } = useI18n();
 

@@ -7,6 +7,7 @@
 
 <style lang="postcss">
 .presentation{
+  @apply pt-12;
   a{
     @apply font-medium text-zinc-200 hover:text-green-300 focus-visible:text-green-300;
   }

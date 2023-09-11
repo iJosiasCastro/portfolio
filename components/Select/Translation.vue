@@ -37,7 +37,7 @@
 
 <style scoped lang="postcss">
 .translation-container{
-  @apply flex justify-end;
+  @apply flex justify-end h-0;
   .select-dropdown{
     @apply inline-flex items-center mt-5 p-2;
   }

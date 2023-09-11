@@ -9,6 +9,7 @@
       <div
         class="container"
       >
+        <SelectTranslation />
         <slot></slot>
       </div>
     </div>

@@ -1,12 +1,10 @@
 <template>
   <Layout>
-
-      <SelectTranslation />
-
+  
       <div class="page">
 
         <header class="header">
-          <div>
+          <div class="info-container">
             <Info />
             <Menu />
           </div>
@@ -49,6 +47,9 @@
   @apply lg:flex justify-between gap-4;
   .header{
     @apply lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:pb-24 pt-12;
+    .info-container{
+      @apply pt-12;
+    }
   }
   .content{
     @apply lg:w-1/2 lg:pb-24 pt-12;
