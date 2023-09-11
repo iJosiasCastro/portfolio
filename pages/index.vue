@@ -15,23 +15,23 @@
 
         <main id="content" class="content">
           <SectionItem
-            :id="$t('menu.about.id')"
-            :name="$t('menu.about.name')"
+            id="about"
+            :name="$t('menu.about')"
           >
             <SectionPresentation />
           </SectionItem>
 
           <SectionItem
-            :id="$t('menu.experience.id')"
-            :name="$t('menu.experience.name')"
+            id="experience"
+            :name="$t('menu.experience')"
           >
             <SectionExperience />
           
           </SectionItem>
 
           <SectionItem
-            :id="$t('menu.projects.id')"
-            :name="$t('menu.projects.name')"
+            id="projects"
+            :name="$t('menu.projects')"
           >
             <SectionMainProjects />
           </SectionItem>

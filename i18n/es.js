@@ -5,9 +5,9 @@ export default {
   info_paragraph:
     "Dedico mi trabajo al desarrollo de aplicaciones web con un fuerte enfoque en la creación de productos digitales de alta calidad.",
   menu: {
-    about: { name: "Acerca de", id: "acerca" },
-    experience: { name: "Experiencia", id: "experiencia" },
-    projects: { name: "Proyectos", id: "proyectos" },
+    about: "Acerca de",
+    experience: "Experiencia",
+    projects: "Proyectos",
   },
   about_paragraph:
     '<p>Mi experiencia comenzó como autodidacta en programación, trabajando en proyectos personales que luego me llevaron a colaborar con diversos equipos, incluyendo desde <a href="https://focomotor.com.ar" target="_blank" rel="noreferrer">startups</a> en crecimiento hasta <a href="https://rusticit.com" target="_blank" rel="noreferrer">agencias especializadas</a> en desarrollo de productos web.</p><p>En la actualidad, me centro en trabajar como desarrollador en un equipo especializado en productos web, donde colaboramos para crear soluciones efectivas y de alta calidad, aprovechando nuevas tecnologías para impulsar la innovación y la eficiencia en nuestro trabajo.</p><p>En mi tiempo libre, mi pasión es el running para mantenerme activo. También exploro nuevas tecnologías, manteniéndome actualizado, y me sumerjo en diversas culturas a través del aprendizaje de idiomas, enriqueciendo mi perspectiva global.</p>',

@@ -5,9 +5,9 @@ export default {
   info_paragraph:
     "I dedicate my work to web application development with a strong focus on creating high-quality digital products.",
   menu: {
-    about: { name: "About", id: "about" },
-    experience: { name: "Experience", id: "experience" },
-    projects: { name: "Projects", id: "projects" },
+    about: "About",
+    experience: "Experience",
+    projects: "Projects",
   },
   about_paragraph:
     '<p>My journey started as a self-taught programmer, working on personal projects that later led me to collaborate with various teams, ranging from <a href="https://focomotor.com.ar" target="_blank" rel="noreferrer">growing startups</a> to specialized <a href="https://rusticit.com" target="_blank" rel="noreferrer">web product agencies</a>.</p><p>Currently, I focus on working as a developer in a team specialized in web products, where we collaborate to create effective and high-quality solutions, leveraging new technologies to drive innovation and efficiency in our work.</p><p>In my free time, my passion is running to stay active. I also explore new technologies, keeping myself updated, and immerse myself in various cultures through language learning, enriching my global perspective.</p>',
@@ -77,7 +77,7 @@ export default {
       title: "Resurgimiento Grasa",
       thumbnail: "resurgimiento_grasa_screenshot.jpg",
       link: "https://resurgimiento-grasa.web.app/",
-      description: "A platform for a student center that includes a blog, event calendar, photo gallery, and forum to keep the community informed and connected.",
+      description: "A platform for a student council that includes a blog, event calendar, photo gallery, and forum to keep the community informed and connected.",
       stack: [],
     },
     {
