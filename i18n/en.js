@@ -1,5 +1,6 @@
 export default {
   home_title: "Josias Castro",
+  info_profile_photo_alt: "Profile picture of a Josias Castro",
   info_name: "Josias Castro",
   info_role: "Fullstack Web Application Developer",
   info_paragraph:
