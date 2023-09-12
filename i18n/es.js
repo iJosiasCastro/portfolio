@@ -16,7 +16,7 @@ export default {
     {
       time_from: "Abr",
       time_to: "Sep 2023",
-      title: "Fullstack Developer · GlobalTech Fullstack",
+      title: "Desarrollador Fullstack · GlobalTech",
       skills: ["PHP", "Composer", "JS", "SQL", "Tailwind CSS"],
       description:
         "Colaboré en un equipo de desarrollo para mejorar un producto web. Mi rol incluyó el desarrollo de interfaces de usuario y la implementación de funcionalidades clave. Además, desempeñé un papel activo en procesos de testing y documentación para garantizar la calidad y robustez del código.",
@@ -25,7 +25,7 @@ export default {
     {
       time_from: "Ene",
       time_to: "Abr 2023",
-      title: "Desarrollador Frontend Web Senior · GymRevenue Frontend",
+      title: "Desarrollador Frontend Web Senior · GymRevenue",
       skills: [
         "Laravel",
         "Vue",
@@ -42,16 +42,16 @@ export default {
     {
       time_from: "Jul",
       time_to: "Dic 2022",
-      title: "PHP Developer · Aconpy Fullstack",
+      title: "Desarrollador PHP · Aconpy",
       skills: ["PHP", "Codeigniter", "JS", "Composer", "Node.js", "jQuery"],
       description:
-        "En Aconpy, fui parte de un equipo de desarrollo que construyó aplicaciones web. Mi enfoque estuvo en la entrega de código de alta calidad y en la colaboración efectiva en equipo. También participé activamente en procesos de testing para garantizar la fiabilidad del software.",
+        "En Aconpy, formé parte de un equipo de desarrollo que construyó aplicaciones web. Mi enfoque se centró en entregar código de alta calidad y colaborar de manera efectiva en equipo. También participé activamente en procesos de testing para garantizar la fiabilidad del software.",
       link: "https://aconpy.com",
     },
     {
       time_from: "2021",
       time_to: "2022",
-      title: "Desarrollador de Sitios Web Freelancer Fullstack",
+      title: "Desarrollador de Sitios Web Freelancer",
       skills: ["Laravel", "Vue", "Nuxt.js", "Node.js", "Tailwind CSS"],
       description:
         "Como Desarrollador Freelancer, trabajé en diversos proyectos web, centrándome en la traducción de diseños en código y en la mejora de la experiencia del usuario. Colaboré con otros profesionales en el diseño de sistemas y sitios web.",
@@ -60,7 +60,7 @@ export default {
     {
       time_from: "2018",
       time_to: "2021",
-      title: "Arquitecto de Software · Focomotor Fullstack",
+      title: "Arquitecto de Software · Focomotor",
       skills: ["Laravel", "Vue", "Node.js", "Tailwind CSS", "Nuxt.js"],
       description:
         "Lideré el producto web y trabajé en equipo con otros ingenieros para desarrollar, mantener y documentar el producto web. Participé activamente en el proceso de ingeniería y en la mejora continua de las funcionalidades clave.",

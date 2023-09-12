@@ -16,7 +16,7 @@ export default {
     {
       time_from: "Apr",
       time_to: "Sep 2023",
-      title: "Fullstack Developer · GlobalTech Fullstack",
+      title: "Fullstack Developer · GlobalTech",
       skills: ["PHP", "Composer", "JS", "SQL", "Tailwind CSS"],
       description: "I collaborated on a development team to enhance a web product. My role included UI development and the implementation of key features. Additionally, I played an active role in testing and documentation processes to ensure code quality and robustness.",
       link: "https://globaltechscm.com",
@@ -24,7 +24,7 @@ export default {
     {
       time_from: "Jan",
       time_to: "Apr 2023",
-      title: "Senior Frontend Web Developer · GymRevenue Frontend",
+      title: "Senior Frontend Web Developer · GymRevenue",
       skills: ["Laravel", "Vue", "Node.js", "Tailwind CSS", "SASS", "Nuxt.js", "Vite.js"],
       description:
         "I participated in the development of an interactive web application. My contributions included turning designs into functional code and ongoing application improvement. I fostered collaboration with my coworkers, contributing to mutual growth and our team's success.",
@@ -33,10 +33,10 @@ export default {
     {
       time_from: "Jul",
       time_to: "Dec 2022",
-      title: "PHP Developer · Aconpy Fullstack",
+      title: "PHP Developer · Aconpy",
       skills: ["PHP", "Codeigniter", "JS", "Composer", "Node.js", "jQuery"],
       description:
-        "At Aconpy, I was part of a development team that built web applications. My focus was on delivering high-quality code and effective teamwork collaboration. I also actively participated in testing processes to ensure software reliability.",
+        "At Aconpy, I was part of a development team that built web applications. My focus was on delivering high-quality code and collaborating effectively as a team. I also actively participated in testing processes to ensure software reliability.",
       link: "https://aconpy.com",
     },
     {
@@ -51,14 +51,14 @@ export default {
     {
       time_from: "2018",
       time_to: "2021",
-      title: "Software Architect · Focomotor Fullstack",
+      title: "Software Architect · Focomotor",
       skills: ["Laravel", "Vue", "Node.js", "Tailwind CSS", "Nuxt.js"],
       description:
         "I led the web product and worked in a team with other engineers to develop, maintain, and document the web product. I actively participated in the engineering process and ongoing improvement of key features.",
       link: "https://focomotor.com.ar",
     },
   ],
-  view_resume_button: "View Resume",
+  view_resume_button: "View Résumé",
   main_projects: [
     {
       title: "Focomotor",
