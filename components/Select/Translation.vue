@@ -39,7 +39,7 @@
 .translation-container{
   @apply flex justify-end h-0;
   .select-dropdown{
-    @apply inline-flex items-center mt-5 p-2;
+    @apply inline-flex items-center mt-5 p-2 pb-4;
   }
   .language-item{
     @apply px-4 py-1 flex items-center;
