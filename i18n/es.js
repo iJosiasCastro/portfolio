@@ -54,7 +54,7 @@ export default {
       skills: ["Laravel", "Vue", "Nuxt.js", "Node.js", "Tailwind CSS"],
       description:
         "Como Desarrollador Freelancer, trabajé en diversos proyectos web, centrándome en la traducción de diseños en código y en la mejora de la experiencia del usuario. Colaboré con otros profesionales en el diseño de sistemas y sitios web.",
-      link: "-",
+      link: "",
     },
     {
       time_from: "2018",
