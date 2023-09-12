@@ -16,7 +16,8 @@
           </header>
           <div class="experience-info">
             <h3 class="">
-              <a
+              <component
+                :is="experience.link ? 'a' : 'div'"
                 class="group/link experience-link"
                 :href="experience.link"
                 target="_blank"
@@ -27,11 +28,11 @@
                 </span>
                 <span>
                   {{ experience.title }}
-                  <span>
+                  <span v-if="experience.link">
                     <IconArrowUpRight />
                   </span>
                 </span>
-              </a>
+              </component>
             </h3>
             <p class="experience-description">
               {{ experience.description }}
