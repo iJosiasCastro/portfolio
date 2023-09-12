@@ -48,7 +48,7 @@
       <NuxtLink
         class="group view-projects-link"
         :aria-label="$t('view_projects_button')"
-        :to="localePath('/proyects')"
+        :to="localePath('/projects')"
       >
         <span>
           <span

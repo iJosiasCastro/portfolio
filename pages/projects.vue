@@ -49,8 +49,8 @@
             <td class="project-title-mobile">
               <div>
                 <div class="block sm:hidden">
-                  <a
-                    v-if="project.link"
+                  <component
+                    :is="project.link ? 'a' : 'div'"
                     class="group/link project-link-mobile"
                     :href="project.link"
                     target="_blank"
@@ -60,11 +60,10 @@
                     <span>
                       <span class="project-title-mobile">
                         {{ project.project }}
-                        <IconArrowUpRight />
+                        <IconArrowUpRight v-if="project.link" />
                       </span>
                     </span>
-                  </a>
-                  <div v-else class="project-title-mobile-without-link">{{ project.project }}</div>
+                  </component>
 
                 </div>
                 <div class="project-title">{{ project.project }}</div>
@@ -126,7 +125,7 @@ const projects = computed(() => {
 
 <style scoped lang="postcss">
 .project-list {
-  @apply lg:py-20;
+  @apply lg:py-20 pt-20;
   .back-to-home-link {
     @apply mb-2 inline-flex items-center font-semibold leading-tight text-green-300;
   }
@@ -150,7 +149,7 @@ const projects = computed(() => {
     .project-list-row {
       @apply border-b border-slate-300/10 last:border-none;
       .project-year {
-        @apply py-4 pr-4 align-top text-sm;
+        @apply py-4 pr-4 md:align-top text-sm;
       }
       .project-title-mobile {
         @apply py-4 pr-4 align-top font-semibold leading-snug text-slate-200;
@@ -160,9 +159,6 @@ const projects = computed(() => {
       }
       .project-title-mobile {
         @apply inline-block;
-      }
-      .project-title-mobile-without-link {
-        @apply block;
       }
       .project-title {
         @apply hidden sm:block;
