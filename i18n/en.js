@@ -1,5 +1,5 @@
 export default {
-  home_title: "Josias Castro",
+  home_page_title: "Josias Castro",
   info_profile_photo_alt: "Profile picture of a Josias Castro",
   info_name: "Josias Castro",
   info_role: "Fullstack Web Application Developer",
@@ -89,7 +89,7 @@ export default {
       stack: [],
     },
   ],
-  projects_page_title: "All Projects | Josías Castro",
+  projects_page_title: "All Projects - Josias Castro",
   projects_label_link_home: "Home",
   projects_title: "All Projects",
   projects_table_columns:{

@@ -113,14 +113,18 @@
 <script setup>
 import es from "~/i18n/es.js";
 import en from "~/i18n/en.js";
-
+const { locale: actualLocale, t } = useI18n();
 const localePath = useLocalePath();
 
-const { locale: actualLocale } = useI18n();
+useHead({
+  title: t('projects_page_title')
+})
+
 
 const projects = computed(() => {
   return actualLocale.value == "es" ? es.projects : en.projects;
 });
+
 </script>
 
 <style scoped lang="postcss">

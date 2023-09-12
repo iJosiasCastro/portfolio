@@ -102,7 +102,7 @@ export default {
       stack: [],
     },
   ],
-  projects_page_title: "Proyectos | Josías Castro",
+  projects_page_title: "Proyectos - Josias Castro",
   projects_label_link_home: "Inicio",
   projects_title: "Todos los proyectos",
   projects_table_columns:{

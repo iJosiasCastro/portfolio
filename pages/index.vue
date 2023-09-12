@@ -42,6 +42,14 @@
   </Layout>
 </template>
 
+<script setup>
+const { t } = useI18n();
+
+useHead({
+  title: t('home_page_title')
+})
+</script>
+
 <style scoped lang="postcss">
 .page{
   @apply lg:flex justify-between gap-4;
