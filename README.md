@@ -86,5 +86,5 @@ $ pm2 start ecosystem.config.js
 $ pm2 list
 
 # Stop application
-$ pm2 stop NuxtAppName
+$ pm2 stop JosiasCastroApp
 ```

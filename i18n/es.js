@@ -1,5 +1,5 @@
 export default {
-  lang_prefix: "es",
+  lang_prefix: "/es",
   home_page_title: "Josias Castro",
   info_profile_photo_alt: "Foto de perfil de Josias Castro",
   info_name: "Josias Castro",
