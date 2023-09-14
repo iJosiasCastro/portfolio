@@ -70,3 +70,21 @@ yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Production Deployment
+Using PM2
+For a production-ready deployment, you can use PM2. Here's how:
+
+```bash
+# Install PM2 globally
+$ npm install pm2@latest -g
+
+# Start application
+$ pm2 start ecosystem.config.js
+
+# View a list of all running processes
+$ pm2 list
+
+# Stop application
+$ pm2 stop NuxtAppName
+```
