@@ -1,4 +1,5 @@
 export default {
+  lang_prefix: "es",
   home_page_title: "Josias Castro",
   info_profile_photo_alt: "Foto de perfil de Josias Castro",
   info_name: "Josias Castro",
@@ -25,7 +26,7 @@ export default {
     {
       time_from: "Ene",
       time_to: "Abr 2023",
-      title: "Desarrollador Frontend Web Senior · GymRevenue",
+      title: "Desarrollador Frontend Semi Senior · GymRevenue",
       skills: [
         "Laravel",
         "Vue",
@@ -51,7 +52,7 @@ export default {
     {
       time_from: "2021",
       time_to: "2022",
-      title: "Desarrollador de Sitios Web Freelancer",
+      title: "Desarrollador de Sitios Web · Freelancer",
       skills: ["Laravel", "Vue", "Nuxt.js", "Node.js", "Tailwind CSS"],
       description:
         "Como Desarrollador Freelancer, trabajé en diversos proyectos web, centrándome en la traducción de diseños en código y en la mejora de la experiencia del usuario. Colaboré con otros profesionales en el diseño de sistemas y sitios web.",
@@ -67,7 +68,7 @@ export default {
       link: "https://focomotor.com.ar",
     },
   ],
-  view_resume_button: "Ver Currículum",
+  view_resume_button: "Ver Currículum Completo",
   main_projects: [
     {
       title: "Focomotor",

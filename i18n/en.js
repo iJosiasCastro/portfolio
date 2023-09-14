@@ -1,4 +1,5 @@
 export default {
+  lang_prefix: "",
   home_page_title: "Josias Castro",
   info_profile_photo_alt: "Profile picture of a Josias Castro",
   info_name: "Josias Castro",
@@ -24,7 +25,7 @@ export default {
     {
       time_from: "Jan",
       time_to: "Apr 2023",
-      title: "Senior Frontend Web Developer · GymRevenue",
+      title: "Semi Senior Frontend Developer · GymRevenue",
       skills: ["Laravel", "Vue", "Node.js", "Tailwind CSS", "SASS", "Nuxt.js", "Vite.js"],
       description:
         "I participated in the development of an interactive web application. My contributions included turning designs into functional code and ongoing application improvement. I fostered collaboration with my coworkers, contributing to mutual growth and our team's success.",
@@ -42,7 +43,7 @@ export default {
     {
       time_from: "2021",
       time_to: "2022",
-      title: "Freelance Fullstack Web Developer",
+      title: "Fullstack Web Developer · Freelancer",
       skills: ["Laravel", "Vue", "Nuxt.js", "Node.js", "Tailwind CSS"],
       description:
         "As a Freelance Developer, I worked on various web projects, focusing on translating designs into code and improving the user experience. I collaborated with other professionals on system and website design.",
@@ -58,7 +59,7 @@ export default {
       link: "https://focomotor.com.ar",
     },
   ],
-  view_resume_button: "View Résumé",
+  view_resume_button: "View Full Résumé",
   main_projects: [
     {
       title: "Focomotor",
