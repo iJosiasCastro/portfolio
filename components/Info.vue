@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-  const localePath = useLocalePath()
+const localePath = useLocalePath()
 </script>
 
 <style scoped lang="postcss">

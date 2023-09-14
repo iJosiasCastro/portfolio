@@ -31,8 +31,8 @@
 </template>
 
 <script setup>
-  const { locale: actualLocale, locales } = useI18n()
-  const switchLocalePath = useSwitchLocalePath()
+const { locale: actualLocale, locales } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
 </script>
 
 <style scoped lang="postcss">
