@@ -18,7 +18,7 @@ export default {
       time_from: "Abr",
       time_to: "Sep 2023",
       title: "Desarrollador Fullstack · GlobalTech",
-      skills: ["PHP", "Composer", "JS", "SQL", "Tailwind CSS"],
+      skills: ["PHP", "Composer", "Javascript", "T-SQL", "Tailwind CSS"],
       description:
         "Colaboré en un equipo de desarrollo para mejorar un producto web. Mi rol incluyó el desarrollo de interfaces de usuario y la implementación de funcionalidades clave. Además, desempeñé un papel activo en procesos de testing y documentación para garantizar la calidad y robustez del código.",
       link: "https://globaltechscm.com",
@@ -43,8 +43,8 @@ export default {
     {
       time_from: "Jul",
       time_to: "Dic 2022",
-      title: "Desarrollador PHP · Aconpy",
-      skills: ["PHP", "Codeigniter", "JS", "Composer", "Node.js", "jQuery"],
+      title: "Desarrollador PHP Fullstack · Aconpy",
+      skills: ["PHP", "Codeigniter", "Javascript", "Composer", "Node.js", "jQuery"],
       description:
         "En Aconpy, formé parte de un equipo de desarrollo que construyó aplicaciones web. Mi enfoque se centró en entregar código de alta calidad y colaborar de manera efectiva en equipo. También participé activamente en procesos de testing para garantizar la fiabilidad del software.",
       link: "https://aconpy.com",
@@ -55,7 +55,7 @@ export default {
       title: "Desarrollador de Sitios Web · Freelancer",
       skills: ["Laravel", "Vue", "Nuxt.js", "Node.js", "Tailwind CSS"],
       description:
-        "Como Desarrollador Freelancer, trabajé en diversos proyectos web, centrándome en la traducción de diseños en código y en la mejora de la experiencia del usuario. Colaboré con otros profesionales en el diseño de sistemas y sitios web.",
+        "Como desarrollador freelancer, trabajé en diversos proyectos web, centrándome en la traducción de diseños en código y en la mejora de la experiencia del usuario. Colaboré con otros profesionales en el diseño de sistemas y sitios web.",
       link: "",
     },
     {
@@ -94,14 +94,14 @@ export default {
         "Plataforma para un centro de estudiantes que incluye un blog, calendario de eventos, galería de fotos y foro para mantener a la comunidad informada y conectada.",
       stack: [],
     },
-    {
-      title: "Contabilium",
-      thumbnail: "contabilium_screenshot.jpg",
-      link: "https://contabilium.com",
-      description:
-        "Sistema de gestión y facturación en línea para empresas argentinas. Automatiza procesos administrativos, financieros y de ventas.",
-      stack: [],
-    },
+    // {
+    //   title: "Contabilium",
+    //   thumbnail: "contabilium_screenshot.jpg",
+    //   link: "https://contabilium.com",
+    //   description:
+    //     "Sistema de gestión y facturación en línea para empresas argentinas. Automatiza procesos administrativos, financieros y de ventas.",
+    //   stack: [],
+    // },
   ],
   projects_page_title: "Proyectos - Josias Castro",
   projects_label_link_home: "Inicio",

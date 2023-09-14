@@ -18,7 +18,7 @@ export default {
       time_from: "Apr",
       time_to: "Sep 2023",
       title: "Fullstack Developer · GlobalTech",
-      skills: ["PHP", "Composer", "JS", "SQL", "Tailwind CSS"],
+      skills: ["PHP", "Composer", "Javascript", "T-SQL", "Tailwind CSS"],
       description: "I collaborated on a development team to enhance a web product. My role included UI development and the implementation of key features. Additionally, I played an active role in testing and documentation processes to ensure code quality and robustness.",
       link: "https://globaltechscm.com",
     },
@@ -34,8 +34,8 @@ export default {
     {
       time_from: "Jul",
       time_to: "Dec 2022",
-      title: "PHP Developer · Aconpy",
-      skills: ["PHP", "Codeigniter", "JS", "Composer", "Node.js", "jQuery"],
+      title: "Fullstack PHP Developer · Aconpy",
+      skills: ["PHP", "Codeigniter", "Javascript", "Composer", "Node.js", "jQuery"],
       description:
         "At Aconpy, I was part of a development team that built web applications. My focus was on delivering high-quality code and collaborating effectively as a team. I also actively participated in testing processes to ensure software reliability.",
       link: "https://aconpy.com",
@@ -46,7 +46,7 @@ export default {
       title: "Fullstack Web Developer · Freelancer",
       skills: ["Laravel", "Vue", "Nuxt.js", "Node.js", "Tailwind CSS"],
       description:
-        "As a Freelance Developer, I worked on various web projects, focusing on translating designs into code and improving the user experience. I collaborated with other professionals on system and website design.",
+        "As a freelance developer, I worked on various web projects, focusing on translating designs into code and improving the user experience. I collaborated with other professionals on system and website design.",
       link: "",
     },
     {
@@ -82,13 +82,13 @@ export default {
       description: "A platform for a student council that includes a blog, event calendar, photo gallery, and forum to keep the community informed and connected.",
       stack: [],
     },
-    {
-      title: "Contabilium",
-      thumbnail: "contabilium_screenshot.jpg",
-      link: "https://contabilium.com",
-      description: "An online management and invoicing system for Argentine companies. It automates administrative, financial, and sales processes.",
-      stack: [],
-    },
+    // {
+    //   title: "Contabilium",
+    //   thumbnail: "contabilium_screenshot.jpg",
+    //   link: "https://contabilium.com",
+    //   description: "An online management and invoicing system for Argentine companies. It automates administrative, financial, and sales processes.",
+    //   stack: [],
+    // },
   ],
   projects_page_title: "All Projects - Josias Castro",
   projects_label_link_home: "Home",
