@@ -54,7 +54,7 @@
       <a
         class="group view-resume-link"
         :aria-label="$t('view_resume_button')"
-        href="/resume.pdf"
+        :href="'/'+ $t('lang_prefix') +'/resume.pdf'"
       >
         <span>
           <span
