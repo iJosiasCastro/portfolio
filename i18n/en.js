@@ -106,7 +106,7 @@ export default {
       project: "Personal website v2",
       made_at: "",
       built_with: ["Nuxt.js", "Vue Composition API", "Tailwind CSS"],
-      link: "https://josiascastro.tk",
+      link: "https://josiascastro.us.to",
     },
     {
       year: 2023,
