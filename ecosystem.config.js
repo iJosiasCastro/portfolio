@@ -2,10 +2,11 @@ module.exports = {
   apps: [
     {
       name: 'JosiasCastroApp',
-      port: '3005',
+      port: 3002,
       exec_mode: 'cluster',
-      instances: 'max',
-      script: './.output/server/index.mjs'
-    }
-  ]
+      instances: '1',
+      script: './.output/server/index.mjs',
+      args: 'preview',
+    },
+  ],
 }
