@@ -87,4 +87,7 @@ $ pm2 list
 
 # Stop application
 $ pm2 stop JosiasCastroApp
+
+# Delete application
+$ pm2 delete JosiasCastroApp
 ```
