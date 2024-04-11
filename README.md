@@ -78,4 +78,14 @@ yarn preview
 bun run preview
 ```
 
+Generate website:
+
+```bash
+# npm
+npm run generate
+
+```
+
+After generate the app, replace the string `src="` with `src=".`.
+
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
