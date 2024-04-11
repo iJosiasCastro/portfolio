@@ -16,7 +16,7 @@ export default {
   experiences: [
     {
       time_from: "Apr",
-      time_to: "Sep 2023",
+      time_to: "Dec 2023",
       title: "Fullstack Developer · GlobalTech",
       skills: ["PHP", "Composer", "Javascript", "T-SQL", "Tailwind CSS"],
       description: "I collaborated on a development team to enhance a web product. My role included UI development and the implementation of key features. Additionally, I played an active role in testing and documentation processes to ensure code quality and robustness.",

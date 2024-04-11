@@ -16,7 +16,7 @@ export default {
   experiences: [
     {
       time_from: "Abr",
-      time_to: "Sep 2023",
+      time_to: "Dic 2023",
       title: "Desarrollador Fullstack · GlobalTech",
       skills: ["PHP", "Composer", "Javascript", "T-SQL", "Tailwind CSS"],
       description:

@@ -1,9 +1,6 @@
 <h1 align="center">
   josiascastro.us.to
 </h1>
-<!-- <p align="center">
-  Initial release of <a href="https://josiascastro.us.to" target="_blank">josiascastro.us.to</a> developed with <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a></a>
-</p> -->
 
 ![demo](https://raw.githubusercontent.com/iJosiasCastro/portfolio/master/demo/screenshot.png?token=GHSAT0AAAAAACGYHSFQ6YDSYYIGLAHSAGK6ZIA7SSA)
 
@@ -24,6 +21,9 @@ pnpm install
 
 # yarn
 yarn install
+
+# bun
+bun install
 ```
 
 ## Development Server
@@ -39,6 +39,9 @@ pnpm run dev
 
 # yarn
 yarn dev
+
+# bun
+bun run dev
 ```
 
 ## Production
@@ -54,6 +57,9 @@ pnpm run build
 
 # yarn
 yarn build
+
+# bun
+bun run build
 ```
 
 Locally preview production build:
@@ -67,27 +73,9 @@ pnpm run preview
 
 # yarn
 yarn preview
+
+# bun
+bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Production Deployment
-Using PM2
-For a production-ready deployment, you can use PM2. Here's how:
-
-```bash
-# Install PM2 globally
-$ npm install pm2@latest -g
-
-# Start application
-$ pm2 start ecosystem.config.js
-
-# View a list of all running processes
-$ pm2 list
-
-# Stop application
-$ pm2 stop JosiasCastroApp
-
-# Delete application
-$ pm2 delete JosiasCastroApp
-```
