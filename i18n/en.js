@@ -15,14 +15,6 @@ export default {
     '<p>My journey started as a self-taught programmer, working on personal projects that later led me to collaborate with various teams, ranging from <a href="https://focomotor.com.ar" target="_blank" rel="noreferrer">growing startups</a> to specialized <a href="https://rusticit.com" target="_blank" rel="noreferrer">web product agencies</a>.</p><p>Currently, I focus on working as a developer in a team specialized in web products, where we collaborate to create effective and high-quality solutions, leveraging new technologies to drive innovation and efficiency in our work.</p><p>In my free time, my passion is running to stay active. I also explore new technologies, keeping myself updated, and immerse myself in various cultures through language learning, enriching my global perspective.</p>',
   experiences: [
     {
-      time_from: "Apr",
-      time_to: "Dec 2023",
-      title: "Fullstack Developer · GlobalTech",
-      skills: ["PHP", "Composer", "Javascript", "T-SQL", "Tailwind CSS"],
-      description: "I collaborated on a development team to enhance a web product. My role included UI development and the implementation of key features. Additionally, I played an active role in testing and documentation processes to ensure code quality and robustness.",
-      link: "https://globaltechscm.com",
-    },
-    {
       time_from: "Jan",
       time_to: "Apr 2023",
       title: "Semi Senior Frontend Developer · GymRevenue",
@@ -110,19 +102,6 @@ export default {
     },
     {
       year: 2023,
-      project: "WMS Globaltech",
-      made_at: "GlobalTech",
-      built_with: [
-        "PHP",
-        "Composer",
-        "Transact-SQL",
-        "Javascript ES6",
-        "REST APIs",
-      ],
-      link: "https://globaltechscm.com/en/gt-wms",
-    },
-    {
-      year: 2023,
       project: "GymRevenue",
       made_at: "GymRevenue",
       built_with: [
@@ -134,13 +113,6 @@ export default {
         "Tailwind CSS",
       ],
       link: "https://gymrevenue.com",
-    },
-    {
-      year: 2023,
-      project: "PHPJasper-Usage",
-      made_at: "GlobalTech",
-      built_with: ["PHP", "Composer"],
-      link: "https://github.com/iJosiasCastro/PHPJasper-Usage",
     },
     {
       year: 2022,

@@ -15,15 +15,6 @@ export default {
     '<p>Mi experiencia comenzó como autodidacta en programación, trabajando en proyectos personales que luego me llevaron a colaborar con diversos equipos, incluyendo desde <a href="https://focomotor.com.ar" target="_blank" rel="noreferrer">startups</a> en crecimiento hasta <a href="https://rusticit.com" target="_blank" rel="noreferrer">agencias especializadas</a> en desarrollo de productos web.</p><p>En la actualidad, me centro en trabajar como desarrollador en un equipo especializado en productos web, donde colaboramos para crear soluciones efectivas y de alta calidad, aprovechando nuevas tecnologías para impulsar la innovación y la eficiencia en nuestro trabajo.</p><p>En mi tiempo libre, mi pasión es el running para mantenerme activo. También exploro nuevas tecnologías, manteniéndome actualizado, y me sumerjo en diversas culturas a través del aprendizaje de idiomas, enriqueciendo mi perspectiva global.</p>',
   experiences: [
     {
-      time_from: "Abr",
-      time_to: "Dic 2023",
-      title: "Desarrollador Fullstack · GlobalTech",
-      skills: ["PHP", "Composer", "Javascript", "T-SQL", "Tailwind CSS"],
-      description:
-        "Colaboré en un equipo de desarrollo para mejorar un producto web. Mi rol incluyó el desarrollo de interfaces de usuario y la implementación de funcionalidades clave. Además, desempeñé un papel activo en procesos de testing y documentación para garantizar la calidad y robustez del código.",
-      link: "https://globaltechscm.com",
-    },
-    {
       time_from: "Ene",
       time_to: "Abr 2023",
       title: "Desarrollador Frontend Semi Senior · GymRevenue",
@@ -123,19 +114,6 @@ export default {
     },
     {
       year: 2023,
-      project: "WMS Globaltech",
-      made_at: "GlobalTech",
-      built_with: [
-        "PHP",
-        "Composer",
-        "Transact-SQL",
-        "Javascript ES6",
-        "REST APIs",
-      ],
-      link: "https://globaltechscm.com/en/gt-wms",
-    },
-    {
-      year: 2023,
       project: "GymRevenue",
       made_at: "GymRevenue",
       built_with: [
@@ -147,13 +125,6 @@ export default {
         "Tailwind CSS",
       ],
       link: "https://gymrevenue.com",
-    },
-    {
-      year: 2023,
-      project: "PHPJasper-Usage",
-      made_at: "GlobalTech",
-      built_with: ["PHP", "Composer"],
-      link: "https://github.com/iJosiasCastro/PHPJasper-Usage",
     },
     {
       year: 2022,
