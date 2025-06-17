@@ -86,6 +86,6 @@ npm run generate
 
 ```
 
-After generate the app, replace the string `src="/` with `src="/portfolio/.` and `href="/` with `href="/portfolio/.`.
+After generate the app, replace the string `src="/` with `src="/portfolio/` and `href="/` with `href="/portfolio/`.
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
